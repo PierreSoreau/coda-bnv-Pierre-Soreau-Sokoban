@@ -1,9 +1,11 @@
 #ifndef __FUNCTION_H__
 #define __FUNCTION_H__
-#define CAISSE 'X'
-#define PERSO 'o'
-#define DOTGOAL '.'
+#define CAISSE 'X' //logo de la caisse
+#define PERSO 'o' //logo du joueur
+#define DOTGOAL '.' //logo de l'emplacement de la victoire
 
+
+//structure qui détaille les coordonnées de l'emplacement du joueur dans l'arène 
 struct s_perso {    
     int x;
     int y;
@@ -11,6 +13,7 @@ struct s_perso {
 
 typedef struct s_perso positionperso;
 
+//structure qui détaille les coordonnées de l'emplacement de la caisse dans l'arène
 struct s_caisse {    
     int x;
     int y;
@@ -18,6 +21,7 @@ struct s_caisse {
 
 typedef struct s_caisse positioncaisse;
 
+//structure qui détaille les coordonnées de l'emplacement de la victoire dans l'arène
 struct s_goal {    
     int x;
     int y;
