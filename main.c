@@ -49,8 +49,12 @@ int main(){
         affichage_grille(tab_arene,personnage, caisse, goal);
         
 
-    }   
+    } 
 
+    FILE *fp;
+
+    //On enregistre le plateau de jeu final dans le fichier end.txt 
+    arenefinale_fichier(fp,tab_arene);
 
     int i=0;
     //Le jeu est terminé on libère la mémoire allouée pour l'arène au global, les lignes de l'arène et les structures des logos.

@@ -225,3 +225,28 @@ int condi_victoire(positioncaisse *caisse, positiongoal *goal){
     }
 }
 
+//Fonction qui permet d'enregistrer l'état du plateau de jeu dans un fichier end.txt à chaque fin de partie. A chaque fin de partie le contenu de ce fichier est remplacé par le nouveau plateau de jeu de fin.
+void arenefinale_fichier(FILE *fp, char**tab_arene){
+
+fp = fopen("end.txt", "w+");
+
+    if (fp == NULL)
+    {
+        printf("Le fichier end.txt n'a pas pu être ouvert\n");        
+    }
+
+    int j=0;    
+
+    fprintf(fp,"##########\n");
+    
+    while(j<8){
+        fprintf(fp, "#%s#\n", tab_arene[j]);
+    	j++;
+    }
+
+    fprintf(fp,"##########\n");
+    fclose(fp);
+
+}
+
+

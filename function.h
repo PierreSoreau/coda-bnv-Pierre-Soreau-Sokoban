@@ -2,7 +2,7 @@
 #define __FUNCTION_H__
 #define CAISSE 'X' //logo de la caisse
 #define PERSO 'o' //logo du joueur
-#define DOTGOAL '.' //logo de l'emplacement de la victoire
+#define DOTGOAL '.'//logo de l'emplacement de la victoire
 
 
 //structure qui détaille les coordonnées de l'emplacement du joueur dans l'arène 
@@ -36,6 +36,7 @@ char** move_perso(char**tab_arene,positionperso *personnage,char move);
 char** move_caisse(char**tab_arene,positioncaisse *caisse,char move);
 int condi_victoire(positioncaisse *caisse, positiongoal *goal);
 int condi_defaite(positioncaisse *caisse, positiongoal *goal);
+void arenefinale_fichier(FILE *fp, char**tab_arene);
 
 
 
