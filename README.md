@@ -33,7 +33,7 @@ Ecrire la commande ci-dessous dans le terminal:
 
 ## Fonctionnalités
 
-![gif du jeu](photo/)
+![gif du jeu](photo/sokoban.git)
 
 
 
