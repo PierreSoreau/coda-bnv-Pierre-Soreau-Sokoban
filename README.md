@@ -6,9 +6,9 @@ Si la boîte arrive au bon emplacement symbolisé par un point "." le joueur a g
 Si la boite ne peut plus bouger (par exemple si elle est collée à un mur ou dans un coin) la partie est perdue.  
 Le personnage peut pousser une caisse, mais jamais la tirer.
 
-## Technologies utilisées
+## Technologie utilisée
 
-Langage C
+<img src="https://skillicons.dev/icons?i=c" />
 
 ## Installation et lancement du jeu
 ### 1. Construire l'image Docker
