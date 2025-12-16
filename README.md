@@ -12,23 +12,22 @@ Le personnage peut pousser une caisse, mais jamais la tirer.
 
 ## Installation et lancement du jeu
 ### 1. Construire l'image Docker
-Clonez le projet en local.
-Placer ensuite le [`Dockerfile`](https://github.com/PierreSoreau/coda-bnv-Pierre-Soreau-Sokoban/blob/main/Dockerfile) à la racine du dossier du projet (où se trouve le code C que vous avez enregistré).  
-Puis dans un terminal, positionnez-vous dans le dossier en question puis lancez la commande :
 
-docker build -t mon-jeu-c .
+Clonez le projet en local dans le dossier que vous souhaitez. Taper dans votre terminal ,dans le dossier que vous venez de cloner, la commande suivante:
+
+`docker build -t mon-jeu-c`
 
 ### 2. Lancer un container Docker
 
 Ecrire la commande ci-dessous dans le terminal:
 
-docker run -it --rm --name jeu-c-container mon-jeu-c
+`docker run -it --rm --name jeu-c-container mon-jeu-c`
 
 ### 3. Lancer le jeu
 
 Ecrire la commande ci-dessous dans le terminal:
 
-./sokoban
+`./sokoban`
 
 
 ## Fonctionnalités
