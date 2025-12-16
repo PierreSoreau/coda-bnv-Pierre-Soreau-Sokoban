@@ -12,8 +12,8 @@ Le personnage peut pousser une caisse, mais jamais la tirer.
 
 ## Installation et lancement du jeu
 ### 1. Construire l'image Docker
-
-Placer le [`Dockerfile`](URL de la cible) à la racine du dossier du projet (où se trouve le code C que vous avez enregistré).  
+Clonez le projet en local.
+Placer ensuite le [`Dockerfile`](https://github.com/PierreSoreau/coda-bnv-Pierre-Soreau-Sokoban/blob/main/Dockerfile) à la racine du dossier du projet (où se trouve le code C que vous avez enregistré).  
 Puis dans un terminal, positionnez-vous dans le dossier en question puis lancez la commande :
 
 docker build -t mon-jeu-c .
